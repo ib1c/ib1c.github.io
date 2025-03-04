@@ -1,0 +1,155 @@
+:root {
+	--text: #0DFF00; /*выделяющийся цвет текста*/
+	--back: #0F0F0F; /*основной цвет задника*/
+	--head: #000000; /*цвет хедера и футера*/
+	--section: #0B0B0B; /*цвет секций с контентом*/
+}
+.logo {
+	font-family: 'Post No Bills Colombo';
+}
+.catalog-container {
+	display: flex;
+	justify-content: space-between;
+	height: calc(100vh - 200px);
+	align-items: center;
+}
+.catalog-item {
+	padding: 20px;
+	color: white;
+	background-color: var(--head);
+	border-radius: 5px;
+	width: 18vw;
+}
+.img_in_container {
+	width: 100%;
+}
+.pc-input {
+	border: 1px solid #737373;
+	border-radius: 3px;
+	color: white;
+	background-color: var(--head);
+	padding: 6px;
+	margin: 6px;
+}
+.pc-container {
+	display: flex;
+	flex-direction: column;
+
+}
+.pc-container-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tovari-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tovari-item {
+	width: 250px;
+}
+.logo-img {
+	width: 0.5em;
+}
+/*ОБЩИЕ СВОЙСТВА*/
+html {
+	color: var(--text);
+	background-color: var(--back);
+	font-family: 'Roboto';
+}
+body {
+	margin: 0;
+}
+.head {
+	background-color: var(--head);
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.head-contain {
+	padding: 5px;
+	background-color: var(--section);
+}
+.padding-main {
+	padding-right: 366px;
+	padding-left: 366px;
+}
+.padding-main2 {
+	margin-left: 366px;
+	margin-right: 366px;
+}
+.t36 {
+	font-size: 36px;
+}
+.t64 {
+	font-size: 64px;
+}
+.text-color {
+	color: var(--text);
+}
+.section-main {
+	background-color: var(--section);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.white {
+	color: white;
+}
+h1 {
+	color: white;
+}
+h2 {
+	color: white;
+}
+a {
+	text-decoration: none;
+	color: var(--text);
+}
+a:hover {
+	text-decoration: underline;
+}
+/*ШРИФТЫ*/
+@font-face {
+    font-family: 'Post No Bills Colombo';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://fonts.cdnfonts.com/s/15907/PostNoBillsColombo-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.cdnfonts.com/s/12165/Roboto-Regular.woff') format('woff');
+}
+/*МЕДИА-ЗАПРОСЫ*/
+@media (min-width: 1188px) {
+	.padding-main {
+	padding-right: calc((100vw - 1188px) / 2);
+	padding-left: calc((100vw - 1188px) / 2);
+	}
+	.padding-main2 {
+	margin-left: calc((100vw - 1188px) / 2);
+	margin-right: calc((100vw - 1188px) / 2);
+	}
+}
+@media (max-width: 1187px) {
+	.padding-main {
+	padding-right: 0;
+	padding-left: 0;
+	}
+	.padding-main2 {
+	margin-left: 0;
+	margin-right: 0;
+	}
+	.t36 {
+	font-size: 2.6vw;
+	}
+	.t64 {
+	font-size: 5.2vw;
+	}
+	.catalog-item {
+		width: 25vw;
+	}
+}
