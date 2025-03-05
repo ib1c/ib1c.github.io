@@ -1,8 +1,11 @@
-:root {
+html {
 	--text: #0DFF00; /*выделяющийся цвет текста*/
 	--back: #0F0F0F; /*основной цвет задника*/
 	--head: #000000; /*цвет хедера и футера*/
 	--section: #0B0B0B; /*цвет секций с контентом*/
+}
+#dark:active html {
+	--text: red; /*выделяющийся цвет текста*/
 }
 .logo {
 	font-family: 'Post No Bills Colombo';
@@ -50,6 +53,11 @@
 .logo-img {
 	width: 0.5em;
 }
+.c404 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 /*ОБЩИЕ СВОЙСТВА*/
 html {
 	color: var(--text);
@@ -96,6 +104,9 @@ body {
 }
 .white {
 	color: white;
+}
+.green {
+	color: var(--text);
 }
 h1 {
 	color: white;
